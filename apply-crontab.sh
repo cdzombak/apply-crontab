@@ -5,9 +5,9 @@ PAGER="${PAGER:-less}"
 set -u
 
 __APPLY_CRONTAB_VERSION__="<dev>"
+PROGRAMNAME=$(basename "$0")
 
 USAGE() {
-	PROGRAMNAME=$(basename "$0")
 	>&2 echo -en "Usage:\n$PROGRAMNAME [OPTIONS]\n\n"
 	>&2 echo -en "With no options, $PROGRAMNAME updates the current user's crontab with the the contents of *.cron files from ~/crontab.d.\n\n"
 	>&2 echo -en "The default source directory (~/crontab.d) can be changed by the environment variable CRONTAB_DIR.\n\n"
