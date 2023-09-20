@@ -39,7 +39,7 @@ sudo apt-get install apply-crontab
 
 ### Manual installation from build artifacts
 
-Pre-built binaries for are downloadable from each [GitHub Release](https://github.com/cdzombak/dirshard/releases). Debian packages for each release are available as well.
+Pre-built binaries for are downloadable from each [GitHub Release](https://github.com/cdzombak/apply-crontab/releases). Debian packages for each release are available as well.
 
 ### Build and install locally
 
