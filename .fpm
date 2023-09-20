@@ -1,0 +1,8 @@
+-s dir
+--name apply-crontab
+--description "Better crontab management"
+--url "https://github.com/cdzombak/apply-crontab"
+--maintainer "Chris Dzombak <https://www.dzombak.com>"
+--license LGPL3
+--architecture all
+--depends bash
