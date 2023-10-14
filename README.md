@@ -27,12 +27,19 @@ With no options given, `apply-crontab` generates a crontab from the `*.cron` fil
 
 ### Debian via PackageCloud
 
-Install my PackageCloud Debian repository if you haven't already:
+Install my Debian repository if you haven't already:
+
 ```shell
-curl -s https://packagecloud.io/install/repositories/cdzombak/oss/script.deb.sh?any=true | sudo bash
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://dist.cdzombak.net/deb.key | sudo gpg --dearmor -o /etc/apt/keyrings/dist-cdzombak-net.gpg
+sudo chmod 0644 /etc/apt/keyrings/dist-cdzombak-net.gpg
+echo -e "deb [signed-by=/etc/apt/keyrings/dist-cdzombak-net.gpg] https://dist.cdzombak.net/deb/oss any oss\n" | sudo tee -a /etc/apt/sources.list.d/dist-cdzombak-net.list > /dev/null
+sudo apt-get update
 ```
 
 Then install `apply-crontab` via `apt-get`:
+
 ```shell
 sudo apt-get install apply-crontab
 ```
@@ -55,7 +62,7 @@ cp out/apply-crontab-[VERSION]-all $INSTALL_DIR/apply-crontab
 
 - Issues: https://github.com/cdzombak/apply-crontab/issues/new
 - Author: [Chris Dzombak](https://www.dzombak.com)
-    - [GitHub: @cdzombak](https://www.github.com/cdzombak)
+  - [GitHub: @cdzombak](https://www.github.com/cdzombak)
 
 ## License
 
