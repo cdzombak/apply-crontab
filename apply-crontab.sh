@@ -64,7 +64,9 @@ if [ "$DO_INIT" = true ]; then
 	# m  h  dom mon dow   command
 
 EOF
-	crontab -l > ./99-crontab.cron
+	if [ -e /var/spool/cron/crontabs/"$(whoami)" ]; then
+		crontab -l > ./99-crontab.cron
+	fi
 	git init -b main
 	popd
 	exit 0
