@@ -60,7 +60,7 @@ cp out/apply-crontab-[VERSION]-all $INSTALL_DIR/apply-crontab
 
 ## About
 
-- Issues: https://github.com/cdzombak/apply-crontab/issues/new
+- Issues: [github.com/cdzombak/apply-crontab/issues](https://github.com/cdzombak/apply-crontab/issues)
 - Author: [Chris Dzombak](https://www.dzombak.com)
   - [GitHub: @cdzombak](https://www.github.com/cdzombak)
 
