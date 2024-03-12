@@ -25,7 +25,7 @@ With no options given, `apply-crontab` generates a crontab from the `*.cron` fil
 
 ## Installation
 
-### Debian via PackageCloud
+### Debian via apt repository
 
 Install my Debian repository if you haven't already:
 
